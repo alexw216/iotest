@@ -1,0 +1,2 @@
+#!/bin/bash
+fio --name=test --readwrite=write  --bs=1024k --ba=1024k --directory=/data1 --size=2G --ioengine=libaio --exitall  --group_reporting --iodepth=4 --direct=1 --runtime=60 --time_based --numjobs=64 --output=out_sequential_write_bs1024k_ba1024k.txt

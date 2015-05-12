@@ -1,0 +1,6 @@
+#!/bin/bash
+/root/fio/parted-sdb
+/root/fio/parted-sdc
+/root/fio/mkfs-sdb1
+/root/fio/mkfs-sdc1
+/root/fio/mount-multiple

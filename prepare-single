@@ -1,0 +1,4 @@
+#!/bin/bash
+/root/fio/parted-sdb
+/root/fio/mkfs-sdb1
+/root/fio/mount-single

@@ -1,0 +1,2 @@
+#!/bin/bash
+fio --name=test --readwrite=randrw --rwmixread=30  --percentage_random=70 --bs=4k --ba=4k --directory=/data1:/data2 --size=2G  --ioengine=libaio  --exitall --norandommap --randrepeat=0 --group_reporting --iodepth=4 --direct=1 --runtime=60 --time_based --numjobs=64 --output=out_mix_bs4k_ba4k.txt

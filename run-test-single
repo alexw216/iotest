@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "clean old test result output files."
+rm -rf /root/fio/out*
+echo "Starting all tests."
+/root/fio/fio-random-write
+/root/fio/fio-random-read
+/root/fio/fio-sequential-write
+/root/fio/fio-sequential-read
+/root/fio/fio-mix
+echo "Tests done! Please review result output files."

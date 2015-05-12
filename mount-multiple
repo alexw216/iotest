@@ -1,0 +1,5 @@
+#!/bin/bash
+mount -t ext4 /dev/sdb1 /data1
+mount -t ext4 /dev/sdc1 /data2
+df -m
+mount
